@@ -17,6 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/{id}', function () {
-    return view('wap');
-});
+Route::get('/{id}', "App\Http\Controllers\EncryptedLinkController@approveEncryptedLinkToken");
+
